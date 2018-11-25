@@ -127,93 +127,112 @@ var Filter = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'section',
-        { className: 'filter' },
-        _react2.default.createElement(
-          'h4',
-          null,
-          'Filter'
-        ),
-        _react2.default.createElement(
-          'select',
-          { name: 'neighborhood', className: 'neighborhood' },
-          _react2.default.createElement(
-            'option',
-            null,
-            'Ridgewood'
-          )
-        ),
-        _react2.default.createElement(
-          'select',
-          { name: 'housetype', className: 'housetype' },
-          _react2.default.createElement(
-            'option',
-            null,
-            'Ranch'
-          )
-        ),
-        _react2.default.createElement(
-          'select',
-          { name: 'bedrooms', className: 'bedrooms' },
-          _react2.default.createElement(
-            'option',
-            null,
-            '2 BR'
-          )
-        ),
+        { id: 'filter' },
         _react2.default.createElement(
           'div',
-          { className: 'filters price' },
-          _react2.default.createElement('input', { type: 'text', name: 'min-price', className: 'min-price' }),
-          _react2.default.createElement('input', { type: 'text', name: 'max-price', className: 'max-price' })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'filters floor-space' },
-          _react2.default.createElement('input', { type: 'text', name: 'min-floor-space', className: 'min-floor-space' }),
-          _react2.default.createElement('input', { type: 'text', name: 'max-floor-space', className: 'max-floor-space' })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'filters extras' },
+          { className: 'inside' },
           _react2.default.createElement(
-            'label',
-            { 'for': 'extras' },
-            _react2.default.createElement(
-              'span',
-              null,
-              'Elevators'
-            ),
-            _react2.default.createElement('input', { name: 'extras', value: 'elevator', type: 'checkbox' })
+            'h4',
+            null,
+            'Filter'
           ),
           _react2.default.createElement(
-            'label',
-            { 'for': 'extras' },
+            'select',
+            { name: 'neighborhood', className: 'filters neighborhood' },
             _react2.default.createElement(
-              'span',
+              'option',
               null,
-              'Swimming Pool'
-            ),
-            _react2.default.createElement('input', { name: 'extras', value: 'swimming-pool', type: 'checkbox' })
+              'Ridgewood'
+            )
           ),
           _react2.default.createElement(
-            'label',
-            { 'for': 'extras' },
+            'select',
+            { name: 'housetype', className: 'filters housetype' },
             _react2.default.createElement(
-              'span',
+              'option',
               null,
-              'Finished Basement'
-            ),
-            _react2.default.createElement('input', { name: 'extras', value: 'finished-basement', type: 'checkbox' })
+              'Ranch'
+            )
           ),
           _react2.default.createElement(
-            'label',
-            { 'for': 'extras' },
+            'select',
+            { name: 'bedrooms', className: 'filters bedrooms' },
+            _react2.default.createElement(
+              'option',
+              null,
+              '2 BR'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'filters price' },
             _react2.default.createElement(
               'span',
-              null,
-              'Gym'
+              { className: 'title' },
+              'Price'
             ),
-            _react2.default.createElement('input', { name: 'extras', value: 'gym', type: 'checkbox' })
+            _react2.default.createElement('input', { type: 'text', name: 'min-price', className: 'min-price' }),
+            _react2.default.createElement('input', { type: 'text', name: 'max-price', className: 'max-price' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'filters floor-space' },
+            _react2.default.createElement(
+              'span',
+              { className: 'title' },
+              'Floor Space'
+            ),
+            _react2.default.createElement('input', { type: 'text', name: 'min-floor-space', className: 'min-floor-space' }),
+            _react2.default.createElement('input', { type: 'text', name: 'max-floor-space', className: 'max-floor-space' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'filters extras' },
+            _react2.default.createElement(
+              'span',
+              { className: 'title' },
+              'Extras'
+            ),
+            _react2.default.createElement(
+              'label',
+              { 'for': 'extras' },
+              _react2.default.createElement(
+                'span',
+                null,
+                'Elevators'
+              ),
+              _react2.default.createElement('input', { name: 'extras', value: 'elevator', type: 'checkbox' })
+            ),
+            _react2.default.createElement(
+              'label',
+              { 'for': 'extras' },
+              _react2.default.createElement(
+                'span',
+                null,
+                'Swimming Pool'
+              ),
+              _react2.default.createElement('input', { name: 'extras', value: 'swimming-pool', type: 'checkbox' })
+            ),
+            _react2.default.createElement(
+              'label',
+              { 'for': 'extras' },
+              _react2.default.createElement(
+                'span',
+                null,
+                'Finished Basement'
+              ),
+              _react2.default.createElement('input', { name: 'extras', value: 'finished-basement', type: 'checkbox' })
+            ),
+            _react2.default.createElement(
+              'label',
+              { 'for': 'extras' },
+              _react2.default.createElement(
+                'span',
+                null,
+                'Gym'
+              ),
+              _react2.default.createElement('input', { name: 'extras', value: 'gym', type: 'checkbox' })
+            )
           )
         )
       );
