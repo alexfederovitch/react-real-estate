@@ -366,12 +366,8 @@ var Header = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
-    _this.clickedBtn = function () {
-      console.log('swag');
-    };
-
     _this.state = {
-      name: 'Joe'
+      name: 'Alex'
     };
     return _this;
   }
@@ -382,7 +378,41 @@ var Header = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'listings' },
-        'Listings'
+        _react2.default.createElement(
+          'section',
+          { className: 'search-area' },
+          _react2.default.createElement('input', { type: 'text', name: 'search' })
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'sortby-area' },
+          _react2.default.createElement(
+            'div',
+            null,
+            '390 results found'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'sort-options' },
+            _react2.default.createElement(
+              'select',
+              { name: 'sortby', className: 'sortby' },
+              _react2.default.createElement(
+                'option',
+                { value: 'price-asc' },
+                'Highest Price'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'price-dsc' },
+                'Lowest Price'
+              )
+            ),
+            _react2.default.createElement('div', { className: 'view' })
+          )
+        ),
+        _react2.default.createElement('section', { className: 'listings-results' }),
+        _react2.default.createElement('section', { className: 'pagination' })
       );
     }
   }]);
