@@ -1,3 +1,10 @@
+#content-area {
+    overflow: auto;
+    width: 100%;
+    background: black;
+    min-height: 100vh;
+}
+
 #filter {
     background: $grey;
     width: 30%;
@@ -108,6 +115,52 @@
     
                 }
 
+            }
+        }
+    }
+
+    .listings-results {
+        margin-bottom: 60px;
+
+        .listing {
+            background: #fff;
+            width: 33.33%;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 9px 54px -4px rgba(224, 224, 224, 1);
+            -moz-box-shadow: 0 9px 54px -4px rgba(224, 224, 224, 1);
+            box-shadow: 0 9px 54px -4px rgba(224, 224, 224, 1);
+        }
+
+        .listing-img {
+            color: white;
+            padding: 15px;
+            position: relative;
+            background: url(https://www.realestate.com.au/blog/images/600x451-fit,progressive/2017/09/14153416/boundary-wall-design_800x600.jpg)
+             no-repeat center center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            min-height: 200px;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            .details {
+                position: absolute;
+                top:0;
+                left:0;
+                bottom:0;
+                right:0;
+                -webkit-border-top-left-radius: 5px;
+                -webkit-border-top-right-radius: 5px;
+                -moz-border-radius-topleft: 5px;
+                -moz-border-radius-topright: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
             }
         }
     }

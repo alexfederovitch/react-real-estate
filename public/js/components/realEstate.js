@@ -426,13 +426,13 @@ var Header = function (_Component) {
               'div',
               { className: 'listing-img' },
               _react2.default.createElement(
-                'span',
-                { className: 'Address' },
-                'Address'
-              ),
-              _react2.default.createElement(
                 'div',
                 { className: 'details' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'Address' },
+                  'Address'
+                ),
                 _react2.default.createElement(
                   'div',
                   { className: 'user-img' },
